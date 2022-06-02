@@ -1,0 +1,89 @@
+@font-face  {
+  font-family: 'Circe Regular';
+  src: url('./fonts/Regular/Circe-Regular.eot');
+  src: url('./fonts/Regular/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Regular/Circe-Regular.woff') format('woff'),
+  url('./fonts/Regular/Circe-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face  {
+  font-family: 'Circe Bold';
+  src: url('./fonts/Bold/Circe-Bold.eot');
+  src: url('./fonts/Bold/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Bold/Circe-Bold.woff') format('woff'),
+  url('./fonts/Regular/Circe-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.leaflet-control-attribution.leaflet-control {
+  display: none;
+}
+
+.leaflet-control-zoom-in{
+  margin: 0px;
+  padding: 0px;
+}
+
+.leaflet-control-zoom-out{
+  margin: 0px;
+  padding: 0px
+}
+
+.marker-cluster-yellow {
+  background-color: #f6ea00;
+}
+
+.marker-cluster-yellow div {
+  background-color: #f6ea00;
+  color: #231F20;
+  font-family: 'Circe Bold';
+}
+
+.marker-cluster-blue {
+  background-color: #5266ff;
+}
+
+.marker-cluster-blue div {
+  background-color: #5266ff;
+  color: #fff;
+  font-family: 'Circe Bold';
+}
+
+.marker-cluster-sea {
+  background-color: #00e4be;
+}
+.marker-cluster-sea div {
+  background-color: #00e4be;
+  color: #000;
+  font-family: 'Circe Bold';
+}
+
+.marker-cluster-pink {
+  background-color: #ff7e89;
+}
+
+.marker-cluster-pink div {
+  background-color: #ff7e89;
+  color: #fff;
+  font-family: 'Circe Bold';
+}
