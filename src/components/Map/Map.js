@@ -25,7 +25,7 @@ export const Map = (appProps) => {
         const popupt = document.getElementById('pop-container');
         const topLeft = document.getElementById('topLeft');
 
-        L.tileLayer('./try_map/{z}/{x}/{y}.png', {
+        L.tileLayer('/static/try_map/{z}/{x}/{y}.png', {
             minZoom: 3,
             maxZoom: 5,
             coninuousWorld: false,
@@ -341,6 +341,8 @@ export const Map = (appProps) => {
         return () => {
             map.off();
             map.remove();
+
+            
         }
     }, []);
 
