@@ -1,4 +1,4 @@
-.infoWrapper{
+.modalWrapper{
     width: 43%;
     height: 96%;
     margin: 0 auto;
@@ -11,13 +11,13 @@
 }
 
 @media screen and (max-width: 1500px)  {
-    .infoWrapper {
+    .modalWrapper {
         width: 70%;
     }
 }
 
 @media screen and (max-width: 1000px)  {
-    .infoWrapper {
+    .modalWrapper {
         width: 100%;
         height: 100%;
         margin: 0;
@@ -31,6 +31,16 @@
     background-image: url('../../../public/logos/logo1.png');
     background-size: 150%;
     margin-bottom: 20px;
+}
+
+.logoMain{
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    z-index: 2;
+    background: center center no-repeat;
+    background-image: url('/logos/logo1.png');
+    background-size: 100%;
 }
 
 .modalToggle{
@@ -103,3 +113,13 @@
 .textContainer { -ms-overflow-style: none; }
 
 .textContainer { overflow: -moz-scrollbars-none;}
+
+.infoContent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat;
+    background-position: top left; 
+    background-image: url('/static/infoPage/infoBack2.png');
+    background-size: 100%;
+}

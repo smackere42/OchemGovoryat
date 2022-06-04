@@ -1,11 +1,9 @@
 .phrasesWrapper {
-    position: absolute;
     /* position: relative; */
     overflow-y: scroll;
     width: 100%;
     /* top: 30%; */
     height: 65%;
-    border: 1px solid #5267ff;
     /* border-radius: 0px 0px 25px 25px; */
 }
 
@@ -30,13 +28,16 @@
     .phraseWithAnswer {
         margin-bottom: 15px;
     }
-    .answer {
+
+    .answer{
         align-self: flex-end;
     }
     .withoutAnswer {
         display: none;
     }
 }
+
+
 
 @media screen and (max-height: 460px)  {
     .phrasesWrapper {

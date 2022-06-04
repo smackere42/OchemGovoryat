@@ -1,12 +1,15 @@
 import InfoModal from "./InfoModal";
 import { usestate, useEffect } from 'react';
+import phrases from "../PopUp/phrases";
+import styles from "./styles.module.scss"
 
 const InfoPage = () =>{
-
 
     useEffect(()=> {
         const modal = document.getElementById('modal');
         const modalOff = document.getElementById('modalToggle');
+
+        
 
         modalOff.addEventListener('click', function(e){
             modal.classList.remove('modalShow');
@@ -14,12 +17,12 @@ const InfoPage = () =>{
         })
     })
     return(
-        <div className="infoWrapper">
+        <div>
             <InfoModal/>
             <div id="logo" tabIndex={0} className='logo'>
-                <a tabIndex={0} className='drugoeDelo' href='https://drugoedelo.ru/' title='Другое дело' alt='Другое дело сылка'><div className='logoMap'></div></a>
+                <a tabIndex={0} className={styles.logo} href='https://drugoedelo.ru/' title='Другое дело' alt='Другое дело сылка'><div className={styles.logoMain}></div></a>
             </div>
-            <div>
+            <div className={styles.infoContent}>
             </div>
         </div>
     )

@@ -3,10 +3,10 @@ import styles from './styles.module.scss'
 const InfoModal = () => {
   return(
       <div id='modal' className="modalShow">
-        <div className={styles.infoWrapper}>
+        <div className={styles.modalWrapper}>
             <div id='modalToggle' className={styles.modalToggle}></div>
             <div id="logo" tabIndex={0} className={styles.logo}>
-                <a tabIndex={0} className='' href='https://drugoedelo.ru/' title='Другое дело' alt='Другое дело сылка'><div className={styles.logo}></div></a>
+                <a tabIndex={0} href='https://drugoedelo.ru/' title='Другое дело' alt='Другое дело сылка'><div className={styles.logo}></div></a>
             </div>
             <div className={styles.textContainer}>
               <h2>Другое Дело и проект Sloooshai решили вместе узнать,<br/>о чём говорят в разных городах России.</h2>

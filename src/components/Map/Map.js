@@ -12,10 +12,11 @@ export const Map = () => {
     //map creating
     const map = L.map('map', { zoomControl: false });
 
-    // map.on('load', () => {
-    //   console.log('loasded')
-    //   setLoading(false);
-    // });
+    const preloaderTimeout = () =>{
+      setTimeout(function() {
+        setLoading(false);
+      }, 3000);
+    }
 
     map.setView(
       [-48.574779942522675, -136.49414062500003],
@@ -24,16 +25,13 @@ export const Map = () => {
 
     const closeBut = document.getElementById('pop-toggle');
     const popupt = document.getElementById('pop-container');
-    const topLeft = document.getElementById('topLeft');
 
     const layer = L.tileLayer('/static/try_map/{z}/{x}/{y}.png', {
       minZoom: 3,
       maxZoom: 5,
       coninuousWorld: false,
       noWrap: true,
-    }).on('load', () => {
-      setTimeout(setLoading(false), 10000)
-    }).addTo(map);
+    }).on('load', preloaderTimeout()).addTo(map);
 
     //markers icons
     const bigIcon = L.icon({
@@ -171,7 +169,7 @@ export const Map = () => {
     })
       .addTo(map)
       .on('click', function () {
-        popShow(46);
+        popShow(59);
       });
     const Chita = L.marker([-56.26778799154057, 16.171892324361828], {
       title: 'Чита',
@@ -441,7 +439,7 @@ export const Map = () => {
       alt: 'Заметчино',
       icon: smallIcon,
     }).on('click', function () {
-      popShow(35);
+      popShow(25);
     });
     const Kaluga = L.marker([-51.01357177384563, -140.36576316162328], {
       title: 'Калуга',
@@ -513,6 +511,15 @@ export const Map = () => {
     }).on('click', function () {
       popShow(36);
     });
+    const Voronej = L.marker([-55.57842132136231, -128.40820312500003], {
+      title: 'Воронеж',
+      alt: 'Воронеж',
+      icon: smallIcon,
+    })
+    .addTo(map)
+    .on('click', function() {
+        popShow(6)
+      });
 
     //create clusters
     const markers = L.markerClusterGroup({
