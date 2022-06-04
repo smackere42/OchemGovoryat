@@ -62,10 +62,10 @@ const PopUp = ({ index }) => {
               >
                 {phrase.phrase2}
               </div>
-              <div>
-                <a></a>
-                <a></a>
-                <a></a>
+              <div className="shareLinks">
+                <a><div className="vk"></div></a>
+                <a><div className="telegramm"></div></a>
+                <a><div className="odnoklassniki"></div></a>
               </div>
             </div>
           ))}

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
 import LeftTop from '../LeftTop/LeftTopContent';
 import PopUp from '../PopUp/PopUp';
 import Preloader from '../Preloader/Preloader';
@@ -33,8 +32,7 @@ export const Map = () => {
       coninuousWorld: false,
       noWrap: true,
     }).on('load', () => {
-      console.log('loasded')
-      setLoading(false)
+      setTimeout(setLoading(false), 10000)
     }).addTo(map);
 
     //markers icons

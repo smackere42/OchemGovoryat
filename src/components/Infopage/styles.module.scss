@@ -1,0 +1,105 @@
+.infoWrapper{
+    width: 43%;
+    height: 96%;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 1%;
+    border-radius: 30px;
+    padding: 15px 20px 15px;
+    font-family: 'Circe Regular';
+    position: relative;
+}
+
+@media screen and (max-width: 1500px)  {
+    .infoWrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px)  {
+    .infoWrapper {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+.logo{
+    width: 90px;
+    height: 50px;
+    background: center center no-repeat;
+    background-image: url('../../../public/logos/logo1.png');
+    background-size: 150%;
+    margin-bottom: 20px;
+}
+
+.modalToggle{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 20px;
+    top: 20px;
+    background: center center no-repeat;
+    background-image: url(../../icons/close.svg);
+}
+
+.modalToggle:hover{
+    cursor: pointer;
+}
+
+.textContainer{
+    height: 85%;
+    font-size: 16px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-height: 780px)  {
+    .textContainer {
+        height: 80%;
+    }
+}
+
+@media screen and (max-height: 580px)  {
+    .textContainer {
+        height: 75%;
+    }
+}
+
+@media screen and (max-height: 580px)  {
+    .textContainer {
+        height: 65%;
+    }
+}
+
+@media screen and (max-height: 380px)  {
+    .textContainer {
+        height: 55%;
+    }
+}
+
+.textContainer h2:nth-child(1){
+    margin-bottom: 40px;
+}
+
+.textContainer h2{
+    font-size: 24px;
+}
+
+.standrtText{
+    margin-bottom: 30px;
+    font-family: 'Actor Regular';
+}
+
+.standrtTextBreaker{
+    margin-bottom: 40px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.textContainer::-webkit-scrollbar  { width: 0; }
+
+.textContainer { -ms-overflow-style: none; }
+
+.textContainer { overflow: -moz-scrollbars-none;}

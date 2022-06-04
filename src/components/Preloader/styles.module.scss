@@ -14,25 +14,25 @@
   .leftT{
     width: 50%;
     height: 50%;
-    background-color: #ff7e89;
+    background-color:white;
   }
   
   .rightT{
     width: 50%;
     height: 50%;
-    background-color: #f6ea00;
+    background-color: white;
   }
   
   .leftD{
     width: 50%;
     height: 50%;
-    background-color: #00e4be;
+    background-color: white;
   }
   
   .rightD{
     width: 50%;
     height: 50%;
-    background-color: #5266ff;
+    background-color: white;
   }
 
   .preloaderWrapper {
@@ -40,13 +40,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
     .preloader {
-        background: url('/static/icons/rc-car-loader.svg');
+        background: url('/static/icons/preloader.svg');
+        background-size: 50%;
         background-repeat: no-repeat;
         background-position: center;
         width: 50%;
