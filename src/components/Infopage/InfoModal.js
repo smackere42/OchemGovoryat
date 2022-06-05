@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import styles from './styles.module.scss'
 
 const InfoModal = () => {
   return(
       <div id='modal' className="modalShow">
         <div className={styles.modalWrapper}>
-            <div id='modalToggle' className={styles.modalToggle}></div>
+            <Link href="/Map"><a><div id='modalToggle' className={styles.modalToggle}></div></a></Link>
             <div id="logo" tabIndex={0} className={styles.logo}>
                 <a tabIndex={0} href='https://drugoedelo.ru/' title='Другое дело' alt='Другое дело сылка'><div className={styles.logo}></div></a>
             </div>

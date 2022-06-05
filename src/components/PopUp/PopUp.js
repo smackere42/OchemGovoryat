@@ -1,6 +1,7 @@
 import classnames from "classnames/bind";
 import phrases from "./phrases";
 import styles from "./styles.module.scss";
+import FocusLock from 'react-focus-lock';
 
 const clx = classnames.bind(styles);
 
@@ -8,18 +9,20 @@ const PopUp = ({ index }) => {
   const creator = phrases[index];
 
   return (
+    <FocusLock>
     <div
 			id="pop-container"
 			className="popHide"
       role="alert"
 		>
       <div className="pop-wrapper">
-        <div id="pop-toggle" title="закрыть" tabIndex={0} />
+        <div id="pop-toggle" title="закрыть нажмите escape" tabIndex={0} />
         <div
           className={creator.class}
           title={creator.city}
           tabIndex={1}
           aria-label={creator.city}
+          alt={creator.city}
         >
           {creator.city}
         </div>
@@ -35,6 +38,7 @@ const PopUp = ({ index }) => {
                 })}
                 tabIndex={1}
                 aria-lable={phrase.phrase}
+                alt={phrase.phrase}
               >
                 {phrase.phrase}
               </div>
@@ -51,6 +55,8 @@ const PopUp = ({ index }) => {
                 )}
                 tabIndex={1}
                 aria-label={phrase.answer}
+                alt={phrase.answer}
+                title={phrase.answer}
               >
                 {phrase.answer}
               </div>
@@ -60,6 +66,7 @@ const PopUp = ({ index }) => {
                 })}
                 tabIndex={1}
                 aria-label={phrase.phrase2}
+                title={phrase.phrase2}
               >
                 {phrase.phrase2}
               </div>
@@ -73,6 +80,7 @@ const PopUp = ({ index }) => {
         </div>
       </div>
     </div>
+    </FocusLock>
   );
 };
 

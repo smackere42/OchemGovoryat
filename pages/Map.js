@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import LeftTop from '../LeftTop/LeftTopContent';
-import PopUp from '../PopUp/PopUp';
-import Preloader from '../Preloader/Preloader';
+import LeftTop from '../src/components/LeftTop/LeftTopContent';
+import PopUp from '../src/components/PopUp/PopUp';
+import Preloader from '../src/components/Preloader/Preloader';
 
 const Map = () => {
   const [loading, setLoading] = useState(true);
