@@ -7,6 +7,9 @@ const clx = classnames.bind(styles);
 
 const PopUp = ({ index }) => {
   const creator = phrases[index];
+  const linkToMain = 'http://localhost:3000/?count=' + index;
+  const tgLink = 'https://t.me/share/url?url='
+  const text = '&text='
 
   return (
     <FocusLock>
@@ -16,7 +19,7 @@ const PopUp = ({ index }) => {
       role="alert"
 		>
       <div className="pop-wrapper">
-        <div id="pop-toggle" title="закрыть нажмите escape" tabIndex={0} />
+        <div id="pop-toggle" className="hide" title="закрыть нажмите escape" tabIndex={0} />
         <div
           className={creator.class}
           title={creator.city}
@@ -37,7 +40,7 @@ const PopUp = ({ index }) => {
                   [styles.phraseWithAnswer]: Boolean(phrase.answer),
                 })}
                 tabIndex={1}
-                aria-lable={phrase.phrase}
+                aria-labelledby={phrase.phrase}
                 alt={phrase.phrase}
               >
                 {phrase.phrase}
@@ -71,9 +74,9 @@ const PopUp = ({ index }) => {
                 {phrase.phrase2}
               </div>
               <div className="shareLinks">
-                <a><div className="vk" tabIndex={1} title='поделиться вконтакте'></div></a>
-                <a><div className="telegramm" tabIndex={1} title='поделиться в телеграме'></div></a>
-                <a><div className="odnoklassniki" tabIndex={1} title='поделиться в одноклассниках'></div></a>
+                <a href=""><div className="vk" tabIndex={1} title='поделиться вконтакте' target="_blank"></div></a>
+                <a href={tgLink + linkToMain + text + phrase.phrase + phrase.phrase + phrase.answer + phrase.phrase2} title='поделиться в телеграмме' target="_blank"><div className="telegramm" tabIndex={1} title='поделиться в телеграме'></div></a>
+                <a href=""><div className="odnoklassniki" tabIndex={1} title='поделиться в одноклассниках' target="_blank"></div></a>
               </div>
             </div>
           ))}

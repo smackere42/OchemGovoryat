@@ -35,7 +35,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## About this project
 
-This is a non-comercial progect for colaboration of (["Друго дело"](https://www.drugoedelo.ru) and ["Slooshai"](https://vk.com/sloooshai)).
+This is a non-comercial progect for colaboration of (["Друго дело"](https://www.drugoedelo.ru) and ["Slooshai"](https://vk.com/sloooshai).
 
 This project displays a map where you can see the cities and the phrases (that were sent by people (during the limited time event)) that were spoken in each of them.
 

@@ -1,0 +1,81 @@
+.Page{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.logo{
+    width: 90px;
+    height: 50px;
+    background: center center no-repeat;
+    background-image: url('../../../public/logos/logo1.png');
+    background-size: 150%;
+    margin-bottom: 20px;
+}
+
+.logoMain{
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    z-index: 2;
+    background: center center no-repeat;
+    background-image: url('/logos/logo1.png');
+    background-size: 100%;
+}
+
+.wrapper{
+    width: 300px;
+    height: 300px;
+}
+
+.marker{
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background: center center no-repeat;
+    background-image: url('/static/icons/markerBig.png');
+    background-size: 100%;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.marker:hover{
+    cursor: pointer;
+}
+
+.relinkWrapper{
+  width: 100%;
+  height: 100%;
+//   background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+    // background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.city{
+    border-radius: 30px 30px 30px 30px;
+    align-self: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.instruction{
+    align-self: center;
+    text-align: center;
+    font-family: 'Circe Regular';
+}
+
+.pojectLogo{
+    width: 300px;
+    height: 100px;
+    background: center center no-repeat;
+    background-image: url('/static/icons/projectLogo.png');
+    background-size: 100%;
+    margin-bottom: 20px;
+}

@@ -15,7 +15,7 @@ const Map = () => {
     const preloaderTimeout = () =>{
       setTimeout(function() {
         setLoading(false);
-      }, 3000);
+      }, 10000);
     }
 
     map.setView(

@@ -5,7 +5,7 @@ const InfoModal = () => {
   return(
       <div id='modal' className="modalShow">
         <div className={styles.modalWrapper}>
-            <Link href="/Map"><a><div id='modalToggle' className={styles.modalToggle}></div></a></Link>
+            <a><div id='modalToggle' className={styles.modalToggle}></div></a>
             <div id="logo" tabIndex={0} className={styles.logo}>
                 <a tabIndex={0} href='https://drugoedelo.ru/' title='Другое дело' alt='Другое дело сылка'><div className={styles.logo}></div></a>
             </div>

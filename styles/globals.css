@@ -94,3 +94,9 @@ a {
   background-image: url('/static/infoPage/infoBackground.png');
   background-size: 100%;
 }
+
+.Page{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
