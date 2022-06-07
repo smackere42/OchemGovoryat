@@ -12,8 +12,8 @@ const TryPage = () => {
     const router = useRouter();
     const { query } = router;
 
-    const count = parseInt(query.count || 0);
-    const firstP = phrases[count];
+    const city = parseInt(query.city || -1);
+    const firstP = phrases[0];
 
     useEffect(()=> {
         const modal = document.getElementById('modal');
@@ -23,7 +23,7 @@ const TryPage = () => {
         const popupt = document.getElementById('pop-container');
 
         closeBut.addEventListener('click', function() {
-            router.push('/Map');
+            router.push(`/Map?city=${city}`);
         })
         
         popUp.addEventListener('click', function(e) {
@@ -39,7 +39,7 @@ const TryPage = () => {
 
     return(
         <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
-            <PopUp index={count}/>
+            <PopUp index={0}/>
             <InfoModal/>
             <div id="logo" tabIndex={0} className='logo'>
                 <a tabIndex={0} className={styles.logo} href='https://drugoedelo.ru/' title='Другое дело' alt='Другое дело сылка'><div className={styles.logoMain}></div></a>

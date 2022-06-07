@@ -2,29 +2,44 @@ import { useState, useEffect } from 'react';
 import LeftTop from '../src/components/LeftTop/LeftTopContent';
 import PopUp from '../src/components/PopUp/PopUp';
 import Preloader from '../src/components/Preloader/Preloader';
+import { useRouter } from 'next/router';
 
 const Map = () => {
   const [loading, setLoading] = useState(true);
 
   const [index, setIndex] = useState(5);
+  const router = useRouter();
+  const { query } = router;
 
   useEffect(() => {
+    const city = parseInt(query.city || -1);
     //map creating
     const map = L.map('map', { zoomControl: false });
+    const closeBut = document.getElementById('pop-toggle');
+    const popupt = document.getElementById('pop-container');
+  
+    //Popup functions and events
+    const popShow = (i) => {
+      popupt.classList.remove('popHide');
+      popupt.classList.add('popShow');
+      setIndex(i);
+    };
 
     const preloaderTimeout = () =>{
       setTimeout(function() {
+        console.log(city);
+        if (city > -1 && city < 60)
+        {
+          popShow(city);
+        }
         setLoading(false);
-      }, 10000);
+      }, 1000);
     }
 
     map.setView(
       [-48.574779942522675, -136.49414062500003],
       5,
     );
-
-    const closeBut = document.getElementById('pop-toggle');
-    const popupt = document.getElementById('pop-container');
 
     const layer = L.tileLayer('/static/try_map/{z}/{x}/{y}.png', {
       minZoom: 3,
@@ -724,13 +739,6 @@ const Map = () => {
         map.addLayer(HideGroup);
       }
     });
-
-    //Popup functions and events
-    const popShow = (i) => {
-      popupt.classList.remove('popHide');
-      popupt.classList.add('popShow');
-      setIndex(i);
-    };
 
     document.addEventListener('keyup', function (e) {
       if (e.key === 'Escape') {
