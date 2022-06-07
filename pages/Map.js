@@ -41,7 +41,7 @@ const Map = () => {
       5,
     );
 
-    const layer = L.tileLayer('/static/try_map/{z}/{x}/{y}.png', {
+    const layer = L.tileLayer('/static/mainMap/{z}/{x}/{y}.jpg', {
       minZoom: 3,
       maxZoom: 5,
       coninuousWorld: false,

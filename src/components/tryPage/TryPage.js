@@ -23,7 +23,7 @@ const TryPage = () => {
         const popupt = document.getElementById('pop-container');
 
         closeBut.addEventListener('click', function() {
-            router.push(`/Map?city=${city}`);
+            router.push(`/map?city=${city}`);
         })
         
         popUp.addEventListener('click', function(e) {

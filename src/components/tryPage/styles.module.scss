@@ -69,11 +69,13 @@
     align-self: center;
     text-align: center;
     font-family: 'Circe Regular';
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .pojectLogo{
-    width: 300px;
-    height: 100px;
+    width: 500px;
+    height: 200px;
     background: center center no-repeat;
     background-image: url('/static/icons/projectLogo.png');
     background-size: 100%;

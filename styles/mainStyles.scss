@@ -62,6 +62,8 @@
     border-radius: 25px;
     z-index: 1003;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 600px)
@@ -135,9 +137,10 @@
     margin-bottom: 20px;
     margin-left: 20px;
     max-width: 70%;
-    text-align: center;
-    font-size: 36px;
+    text-align: left;
+    font-size: 32px;
     font-family: 'Circe Regular';
+    align-self: flex-start;
 }
 
 @media screen and (max-width: 300px)  {
@@ -188,10 +191,12 @@
 }
 
 .phrase {
-    padding: 10px;
-    width: 70%;
-    text-align: center;
+    padding: 10px 25px 10px 25px;
+    text-align: left;
     margin-bottom: 20px;
+    flex: auto;
+    align-self: flex-start;
+    max-width: 100%;
 }
 
 .posRight{
