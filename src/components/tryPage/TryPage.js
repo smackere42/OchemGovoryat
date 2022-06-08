@@ -17,14 +17,14 @@ const TryPage = () => {
         const closeBut = document.getElementById('pop-toggle');
         const popupt = document.getElementById('pop-container');
 
-        // closeBut.addEventListener('click', function() {
-        //     router.push(`/map?city=-1`);
-        // })
+        closeBut.addEventListener('click', function() {
+            router.push(`/map?city=-1`);
+        })
         
-        // popUp.addEventListener('click', function(e) {
-        //     popupt.classList.remove('popHide');
-        //     popupt.classList.add('popShow');
-        // })
+        popUp.addEventListener('click', function(e) {
+            popupt.classList.remove('popHide');
+            popupt.classList.add('popShow');
+        })
 
         modalOff.addEventListener('click', function (e) {
             modal.classList.remove('modalShow');
@@ -32,9 +32,11 @@ const TryPage = () => {
         })
 
         document.addEventListener('keyup', function (e) {
-            if (e.key === 'Escape' || e.key === 'Enter') {
-                modal.classList.remove('modalShow');
-                modal.classList.add('modalHide');
+            if (e.key === 'Escape') {
+                if (modal.classList.contains = 'modalShow') {
+                    modal.classList.remove('modalShow');
+                    modal.classList.add('modalHide');
+                }
             }
           });
     },[router]);
@@ -47,20 +49,11 @@ const TryPage = () => {
                 <a tabIndex={0} className={styles.logo} href='https://drugoedelo.ru/' title='Другое дело' alt='Другое дело сылка'><div className={styles.logoMain}></div></a>
             </div>
             <div className={styles.relinkWrapper}>
-                <div className={styles.content}>
-                    {/* <div className={styles.pojectLogo}/> */}
-                    {/* <div className={clx(styles.city, firstP.class)}>
-                        {firstP.city}
-                    </div> */}
-                    {/* <div tabIndex={0} id='popActivate' title="Нажми чтобы узнать что говорят в россии" role="button" className={styles.marker}/> */}
-                    {/* <div className={styles.instruction}>
-                        Нажми на город <br/>и узнай что в нём говорят!
-                    </div> */}
+                    <div tabIndex={0} id='popActivate' title="Нажми чтобы узнать что говорят в россии" role="button" className={styles.marker}></div>
                     <img
                         src="/static/infoPage/index-bg-1920.png"
                         className={styles.mapImage}
                     />
-                </div>
             </div>
         </div>
     )

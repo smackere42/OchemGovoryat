@@ -29,14 +29,12 @@
 }
 
 .marker{
-    margin: 0;
-    width: 30px;
-    height: 30px;
-    background: center center no-repeat;
-    background-image: url('/static/icons/markerBig.png');
-    background-size: 100%;
-    align-self: center;
-    margin-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 20%;
+    z-index: 100;
 }
 
 .marker:hover{
@@ -46,12 +44,6 @@
 .relinkWrapper{
   width: 100%;
   height: 100%;
-//   background: top right no-repeat;
-//   background-image: url('/static/infoPage/index-bg-1920.png');
-//   background-size: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
 }
 
 .city{
@@ -67,15 +59,6 @@
     font-family: 'Circe Regular';
     font-weight: bold;
     font-size: 18px;
-}
-
-.pojectLogo{
-    width: 500px;
-    height: 200px;
-    background: center center no-repeat;
-    background-image: url('/static/icons/projectLogo.png');
-    background-size: 100%;
-    margin-bottom: 20px;
 }
 
 .mapImage {

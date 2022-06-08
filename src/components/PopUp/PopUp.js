@@ -26,7 +26,6 @@ const PopUp = ({ index }) => {
 			className="popHide"
       role="alert"
 		>
-      <FocusLock>
         <div className="pop-wrapper">
           <div id="pop-toggle" className="hide" title="закрыть нажмите escape" tabIndex={0} role="button" />
           <p
@@ -95,7 +94,6 @@ const PopUp = ({ index }) => {
             ))}
           </div>
         </div>
-      </FocusLock>
     </div>
   );
 };
