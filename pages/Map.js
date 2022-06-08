@@ -10,14 +10,62 @@ const Map = () => {
   const [index, setIndex] = useState(5);
   const router = useRouter();
   const { query } = router;
+  const city = parseInt(query.city || -1);
+
 
   useEffect(() => {
-    const city = parseInt(query.city || -1);
+    const popupt = document.getElementById('pop-container');
+    const closeBut = document.getElementById('pop-toggle');
+
+    //Popup functions and events
+    document.addEventListener('keyup', function (e) {
+      if (e.key === 'Escape') {
+        if ((popupt.classList.contains = 'popShow')) {
+          if (city > -1)
+          {
+            router.push('/map', undefined, { shallow: true })
+          } 
+          popupt.classList.remove('popShow');
+          popupt.classList.add('popHide');
+        } else {
+          return;
+        }
+      }
+    });
+
+    closeBut.addEventListener('click', function () {
+      if (city > -1)
+      {
+        router.push('/map', undefined, { shallow: true })
+      } 
+      popupt.classList.remove('popShow');
+      popupt.classList.add('popHide');
+    });
+    const popShow = (i) => {
+      popupt.classList.remove('popHide');
+      popupt.classList.add('popShow');
+      setIndex(i);
+    };
+    
+    window.onload = function() {
+      if ((city > -1 && city < 60) && city != 20)
+      {
+        popShow(city);
+      }
+    }
+  }, [router])
+
+  useEffect(() => {
     //map creating
     const map = L.map('map', { zoomControl: false });
-    const closeBut = document.getElementById('pop-toggle');
     const popupt = document.getElementById('pop-container');
-  
+    const closeBut = document.getElementById('pop-toggle');
+
+    closeBut.addEventListener('click', function () { 
+      popupt.classList.remove('popShow');
+      popupt.classList.add('popHide');
+    });
+
     //Popup functions and events
     const popShow = (i) => {
       popupt.classList.remove('popHide');
@@ -26,14 +74,12 @@ const Map = () => {
     };
 
     const preloaderTimeout = () =>{
+      if (map.getZoom() == 5) {
+        map.addLayer(HideGroup);
+      }
       setTimeout(function() {
-        console.log(city);
-        if (city > -1 && city < 60)
-        {
-          popShow(city);
-        }
         setLoading(false);
-      }, 1000);
+      }, 6000);
     }
 
     map.setView(
@@ -46,7 +92,7 @@ const Map = () => {
       maxZoom: 5,
       coninuousWorld: false,
       noWrap: true,
-    }).on('load', preloaderTimeout()).addTo(map);
+    }).on('load', preloaderTimeout).addTo(map);
 
     //markers icons
     const bigIcon = L.icon({
@@ -64,11 +110,16 @@ const Map = () => {
       title: 'Москва',
       alt: 'москва',
       icon: bigIcon,
+      // role: 'presentation'
+      id: 'Москва',
     })
       .addTo(map)
       .on('click', function () {
         popShow(0);
       });
+
+      Moscow._icon.id = 'Moscow';
+
     const Arkhangelsk = L.marker([-20.879312794023733, -131.5723002737236], {
       title: 'Архангельск',
       alt: 'Архангельск',
@@ -732,7 +783,7 @@ const Map = () => {
     HideGroup.addLayer(Astrahan);
     HideGroup.addLayer(Taganrog);
 
-    map.on('zoomend', function () {
+    map.on('zoom', function () {
       if (map.getZoom() < 4) {
         map.removeLayer(HideGroup);
       } else {
@@ -751,11 +802,6 @@ const Map = () => {
       }
     });
 
-    closeBut.addEventListener('click', function (e) {
-      popupt.classList.remove('popShow');
-      popupt.classList.add('popHide');
-    });
-
     return () => {
       map.off();
       map.remove();
@@ -767,19 +813,19 @@ const Map = () => {
       {loading && <Preloader />}
 
       <PopUp index={index} />
-
       <LeftTop />
-
-      <div
-        id="map"
-        style={{
-          width: '100%',
-          height: '100%',
-          background: 'white',
-          margin: '0',
-          minHeight: '100vh',
-        }}
-      />
+        <p tabIndex={0} title='для корректной работы экранного диктора перезагрузите страницу или нажмите f5' role="alert"></p>
+        <p tabIndex={0} title='для переключения между эллеиентами исспользуйте стрелки вниз и вверх, для выхода из страницы с фразами нажмите кнопку выхода или эскейп' role="alert"></p>
+        <div
+          id="map"
+          style={{
+            width: '100%',
+            height: '100%',
+            background: 'white',
+            margin: '0',
+            minHeight: '100vh',
+          }}
+        />
     </div>
   );
 };

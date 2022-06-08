@@ -39,7 +39,6 @@ class MyDocument extends Document {
               defer
               src='https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js'
             />
-            <title>Что говорят в России?</title>
           </head>
         </Head>
 

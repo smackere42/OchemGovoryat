@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  oChemGovoryuatVRossii:
+    image: docker-nextjs-dev
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ./pages:/oChemGovoryuatVRossii/pages
+      - ./public:/oChemGovoryuatVRossii/public
+      - ./src:/oChemGovoryuatVRossii/src
+      - ./styles:/oChemGovoryuatVRossii/styles
+
