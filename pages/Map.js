@@ -12,14 +12,21 @@ const Map = () => {
   const { query } = router;
   const city = parseInt(query.city || -1);
 
+  // const popupt = document.getElementById('pop-container');
+  // const closeBut = document.getElementById('pop-toggle');
 
-  useEffect(() => {
+  const popShow = (i) => {
     const popupt = document.getElementById('pop-container');
-    const closeBut = document.getElementById('pop-toggle');
+    popupt.classList.remove('popHide');
+    popupt.classList.add('popShow');
+    setIndex(i);
+  };
 
-    //Popup functions and events
-    document.addEventListener('keyup', function (e) {
+
+  const onKeyUpHandler = (e) => {
       if (e.key === 'Escape') {
+        const popupt = document.getElementById('pop-container');
+        const closeBut = document.getElementById('pop-toggle');
         if ((popupt.classList.contains = 'popShow')) {
           if (city > -1)
           {
@@ -30,30 +37,40 @@ const Map = () => {
         } else {
           return;
         }
-      }
-    });
+      }};
 
-    closeBut.addEventListener('click', function () {
+
+    const onClickHandler = (e) => {
+      const popupt = document.getElementById('pop-container');
+      const closeBut = document.getElementById('pop-toggle');
       if (city > -1)
       {
         router.push('/map', undefined, { shallow: true })
       } 
       popupt.classList.remove('popShow');
       popupt.classList.add('popHide');
-    });
-    const popShow = (i) => {
-      popupt.classList.remove('popHide');
-      popupt.classList.add('popShow');
-      setIndex(i);
-    };
+    }
+
+  useEffect(() => {
+    const closeBut = document.getElementById('pop-toggle');
+
+    //Popup functions and events
+    document.addEventListener('keyup', onKeyUpHandler);
+
+    closeBut.addEventListener('click', onClickHandler);
     
-    window.onload = function() {
-      if ((city > -1 && city < 60) && city != 20)
+    return () => {
+      closeBut.removeEventListener('click', onClickHandler);
+      document.removeEventListener('keyup', onKeyUpHandler);
+    }
+  }, [router])
+
+  useEffect(() => {
+    if ((city > -1 && city < 60) && city != 20)
       {
         popShow(city);
       }
-    }
-  }, [router])
+  },[city])
 
   useEffect(() => {
     //map creating
