@@ -109,6 +109,18 @@
 
     a {
         color: #5267ff;
+        border-style: none;
+        border: 0px;
+    }
+
+    a:hover{
+        color:#ff747e;
+    }
+
+    a:active{
+        color: #00E4BE;
+        border-style: none;
+        border: 0px;
     }
 }
 
