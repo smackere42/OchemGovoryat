@@ -1,0 +1,21 @@
+.RightBottom{
+    position: absolute;
+    z-index: 1001;
+    bottom: 1%;
+    right: 1%;
+}
+
+.GitLink{
+    width: 55px;
+    height: 55px;
+    background: center center no-repeat;
+    background-image: url('/static/icons/octocat.svg');
+    background-size: 100%;
+}
+
+@media screen and (max-width: 1000px)  {
+    .GitLink{
+        width: 32px;
+        height: 32px;
+    }
+}

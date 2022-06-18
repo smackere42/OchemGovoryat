@@ -3,6 +3,7 @@ import LeftTop from '../src/components/LeftTop/LeftTopContent';
 import PopUp from '../src/components/PopUp/PopUp';
 import Preloader from '../src/components/Preloader/Preloader';
 import { useRouter } from 'next/router';
+import RightBottom from '../src/components/RightBottom/RightBottom';
 
 const Map = () => {
   const [loading, setLoading] = useState(true);
@@ -96,7 +97,7 @@ const Map = () => {
       }
       setTimeout(function() {
         setLoading(false);
-      }, 6000);
+      }, 2000);
     }
 
     map.setView(
@@ -104,7 +105,7 @@ const Map = () => {
       5,
     );
 
-    const layer = L.tileLayer('/static/mainMap/{z}/{x}/{y}.jpg', {
+    const layer = L.tileLayer('/static/mainMap/{z}/{x}/{y}.png', {
       minZoom: 3,
       maxZoom: 5,
       coninuousWorld: false,
@@ -840,6 +841,7 @@ const Map = () => {
 
       <PopUp index={index} />
       <LeftTop />
+      <RightBottom/>
         <p tabIndex={0} title='для корректной работы экранного диктора перезагрузите страницу или нажмите f5' role="alert"></p>
         <p tabIndex={0} title='для переключения между эллеиентами исспользуйте стрелки вниз и вверх, для выхода из страницы с фразами нажмите кнопку выхода или эскейп' role="alert"></p>
         <div

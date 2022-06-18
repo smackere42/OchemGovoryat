@@ -42,9 +42,10 @@ const InfoModal = () => {
               <div tabIndex={0} className={styles.standrtTextBreaker}>Контактная информация:</div>
               <div tabIndex={0} className={styles.standrtText}>Сайт: <a href='https://www.drugoedelo.ru'>https://www.drugoedelo.ru</a><br/>Группа в ВК: <a href='https://vk.com/drygoedelo'>https://vk.com/drygoedelo</a><br/>Электронная почта: support.dd@rsv.ru</div>
               <div tabIndex={0} className={styles.standrtTextBreaker}></div>
+              <div tabIndex={0} className={styles.standrtText}>Дополнительеая информация о проекте находиться здесь : <a href='https://github.com/smackere42/OchemGovoryat'>https://github.com/smackere42/OchemGovoryat</a></div>
             </div>
             <div className='modalShare'>
-              <div alt='Поделиться' className='shareLinks'>Поделиться:</div>
+              <div alt='Поделиться' className='shareLinks'>Поделиться:</div> 
               <div className='shareLinks'>
                 <a href={vkLink} target="_blank" role="link">
                   <div className='vk'  title='Поделиться вконтакте' alt="Поделтьбся вконтакте"/>

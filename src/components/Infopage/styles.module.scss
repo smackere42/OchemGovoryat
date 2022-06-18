@@ -106,6 +106,10 @@
 .standrtText{
     margin-bottom: 30px;
     font-family: 'Circe Regular';
+
+    a {
+        color: #5267ff;
+    }
 }
 
 .standrtTextBreaker{
@@ -114,6 +118,13 @@
 
 .bold{
     font-weight: bold;
+}
+
+.gitMoadl{
+    width: 32px;
+    height: 32px;
+    background: center center no-repeat;
+    background-size: 100%;
 }
 
 .textContainer::-webkit-scrollbar  { width: 0; }
