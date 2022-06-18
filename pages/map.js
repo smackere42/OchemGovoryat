@@ -601,7 +601,15 @@ const Map = () => {
     })
     .addTo(map)
     .on('click', function() {
-        popShow(6)
+        popShow(6);
+      });
+      const Ryazan = L.marker([-51.26278063365147, -132.36328125000003], {
+        title: 'Рязань',
+        alt: 'Рязань',
+        icon: smallIcon,
+      })
+      .on('click', function() {
+          popShow(29);
       });
 
     //create clusters
@@ -799,6 +807,7 @@ const Map = () => {
     HideGroup.addLayer(PereslavblZalesski);
     HideGroup.addLayer(Astrahan);
     HideGroup.addLayer(Taganrog);
+    HideGroup.addLayer(Ryazan);
 
     map.on('zoom', function () {
       if (map.getZoom() < 4) {

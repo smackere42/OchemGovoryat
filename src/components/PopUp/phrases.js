@@ -510,12 +510,12 @@ const phrases = [{
         labelpos: '',
     }],
 },{
-    city: 'Рязани нет',
-    class: 'city',
+    city: 'Рязань',
+    class: 'city seabg borderRadiusLeftDown',
     phrases: [{
         phrase: 'Мамочка, а почему мир раньше был чёрно-белый?',
         place: 'ЦПКИО',
-        class: '',
+        class: 'bluebg',
         labelpos: '',
     }],
 },{
@@ -641,7 +641,7 @@ const phrases = [{
     phrases: [{
         phrase: 'У меня сверниголовая идея',
         place: 'Детский дом творчества',
-        class: 'blubg',
+        class: 'bluebg',
         labelpos: '',
     }],
 },{
