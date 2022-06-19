@@ -1,10 +1,9 @@
-FROM node:16-alpine
+FROM node:16.15.0
 
-WORKDIR /oChemGovoryuatVRossii
+WORKDIR /app
 
 COPY package.json yarn.lock ./
-RUN yarn install
-RUN npm i
+RUN npm i --frozen-lockfile
 
 COPY next.config.js ./next.config.js
 
@@ -12,5 +11,6 @@ COPY pages ./pages
 COPY public ./public
 COPY src ./src
 COPY styles ./styles
+RUN yarn run build
 
-CMD [ "yarn", "dev" ]
+CMD [ "yarn", "start" ]
