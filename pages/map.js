@@ -600,7 +600,6 @@ const Map = () => {
       alt: 'Воронеж',
       icon: smallIcon,
     })
-    .addTo(map)
     .on('click', function() {
         popShow(6);
       });
@@ -809,6 +808,7 @@ const Map = () => {
     HideGroup.addLayer(Astrahan);
     HideGroup.addLayer(Taganrog);
     HideGroup.addLayer(Ryazan);
+    HideGroup.addLayer(Voronej);
 
     map.on('zoom', function () {
       if (map.getZoom() < 4) {

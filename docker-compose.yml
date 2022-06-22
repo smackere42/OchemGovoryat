@@ -2,13 +2,13 @@ version: '3'
 
 services:
   oChemGovoryuatVRossii:
-    image: docker-nextjs
+    image: o-chem-govoryat
     build: .
     ports:
       - 4000:4000
-    # volumes:
-    #   - ./pages:/oChemGovoryuatVRossii/pages
-    #   - ./public:/oChemGovoryuatVRossii/public
-    #   - ./src:/oChemGovoryuatVRossii/src
-    #   - ./styles:/oChemGovoryuatVRossii/styles
+    volumes:
+      - ./pages:/oChemGovoryuatVRossii/pages
+      - ./public:/oChemGovoryuatVRossii/public
+      - ./src:/oChemGovoryuatVRossii/src
+      - ./styles:/oChemGovoryuatVRossii/styles
 
