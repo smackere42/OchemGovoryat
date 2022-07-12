@@ -15,7 +15,7 @@ const InfoModal = () => {
   const odnoklassnikiLink = `https://connect.ok.ru/offer?url=${linkToMain}&title=О чем говорят в россии`;
 
   return(
-      <div id='modal' className="modalShow">
+      <div id='modal' className="modalHide">
         <div className={styles.modalWrapper}>
             <div tabIndex={0} id='modalToggle' className={styles.modalToggle} role="button"  aria-label="Нажмите escape или enter чтобы закрыть"></div>
             <div id="logo" className={styles.logo}>
