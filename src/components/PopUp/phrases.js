@@ -6,8 +6,8 @@ const phrases = [{
     class: 'city bluebg borderRadiusRightDown',
     phrases: [
         {
-            title: 'Ну, что, новогодние продержались! Еще Крещенье, а дальше - просто жизнь!',
-            phrase: 'Ну, что, новогодние продержались! Еще Крещенье, а дальше - просто жизнь!',
+            title: 'Ну, что, новогодние продержались! Еще Крещенье, а дальше — просто жизнь!',
+            phrase: 'Ну, что, новогодние продержались! Еще Крещенье, а дальше — просто жизнь!',
             place: 'Метро «Войковская»',
             class: 'yellowbg',
             labelpos: '',
@@ -20,29 +20,29 @@ const phrases = [{
             labelpos: '',
         },
         {
-            title: 'Сейчас\u00A0бы снова отъесть бока, и\u00A0как 10\u00A0лет назад к\u00A0тебе в\u00A0спортзал, чтобы заново в\u00A0тебя влюбиться',
-            phrase: 'Сейчас\u00A0бы снова отъесть бока, и\u00A0как 10\u00A0лет назад к\u00A0тебе в\u00A0спортзал, чтобы заново в\u00A0тебя влюбиться',
+            title: 'Сейчас\u00A0бы снова отъесть бока, и,\u00A0как 10\u00A0лет назад к\u00A0тебе в\u00A0спортзал, чтобы заново в\u00A0тебя влюбиться',
+            phrase: 'Сейчас\u00A0бы снова отъесть бока, и,\u00A0как 10\u00A0лет назад к\u00A0тебе в\u00A0спортзал, чтобы заново в\u00A0тебя влюбиться',
             place: 'Метро «Белорусская»',
             class: 'seabg',
             labelpos: '',
         },
         {
-            title: 'Гендер Сюрприз - всегда дарит радость!',
-            phrase: 'Гендер Сюрприз - всегда дарит радость!',
+            title: 'Гендер Сюрприз — всегда дарит радость!',
+            phrase: 'Гендер Сюрприз — всегда дарит радость!',
             place: 'У метро «Юго-Западная»',
             class: 'bluebg',
             labelpos: '',
         },
         {
-            title: 'Ты был прав, назвав меня незнакомкой',
-            phrase: 'Ты был прав, назвав меня незнакомкой',
+            title: 'Ты был прав, назвав меня незнакомкой.',
+            phrase: 'Ты был прав, назвав меня незнакомкой.',
             place: 'Люблино',
             class: 'yellowbg',
             labelpos: '',
         },
         {
-            title: 'Недопытали',
-            phrase: 'Недопытали',
+            title: 'Недопытали.',
+            phrase: 'Недопытали.',
             place: 'Детская стоматологическая поликлиника в районе Чертаново',
             class: 'pinkbg',
             labelpos: '',
@@ -55,36 +55,36 @@ const phrases = [{
             labelpos: '',
         },
         {
-            title: 'Теперь я хочу в твою голову залесть и послушать',
-            phrase: 'Теперь я хочу в твою голову залесть и послушать',
+            title: 'Теперь я хочу в твою голову залесть и послушать.',
+            phrase: 'Теперь я хочу в твою голову залесть и послушать.',
             place: 'Общежитие',
             class: 'yellowbg',
             labelpos: '',
         },
         {
-            title: 'Если не сейчас, то и не потом, если не потом, то уж когда-нибудь',
-            phrase: 'Если не сейчас, то и не потом, если не потом, то уж когда-нибудь',
+            title: 'Если не сейчас, то и не потом, если не потом, то уж когда-нибудь.',
+            phrase: 'Если не сейчас, то и не потом, если не потом, то уж когда-нибудь.',
             place: 'Улица 1905 года',
             class: 'pinkbg',
             labelpos: '',
         },
         {
-            title: 'Ой я не помню как чай назывется, но у него такая упаковка, ну вот цвет, как обои на стенах',
-            phrase: 'Ой я не помню как чай назывется, но у него такая упаковка, ну вот цвет, как обои на стенах',
+            title: 'Ой, я не помню, как чай назывется, но у него такая упаковка, ну вот цвет, как обои на стенах!',
+            phrase: 'Ой, я не помню, как чай назывется, но у него такая упаковка, ну вот цвет, как обои на стенах!',
             place: 'Метро «Комсомольская»',
             class: 'seabg',
             labelpos: '',
         },
         {
-            title: 'Что бы почувствовать себя счастливым, нажно снять лапшу с ушей',
-            phrase: 'Что бы почувствовать себя счастливым, нажно снять лапшу с ушей',
+            title: 'Чтобы почувствовать себя счастливым — нужно снять лапшу с ушей.',
+            phrase: 'Чтобы почувствовать себя счастливым — нужно снять лапшу с ушей.',
             place: 'Красная Площадь',
             class: 'bluebg',
             labelpos: '',
         },
         {
-            title: 'Он невысокий, но аккуратно невысокий',
-            phrase: 'Он невысокий, но аккуратно невысокий',
+            title: 'Он невысокий, но аккуратно невысокий.',
+            phrase: 'Он невысокий, но аккуратно невысокий.',
             place: 'Рижская застава',
             class: 'yellowbg',
             labelpos: '',
@@ -97,7 +97,7 @@ const phrases = [{
             labelpos: '',
         },
         {
-            phrase: 'Меня укусила муха-трудоголичка',
+            phrase: 'Меня укусила муха-трудоголичка!',
             place: 'Полярная улица, дом 54, корпус 1',
             class: 'seabg',
             labelpos: '',
@@ -109,31 +109,31 @@ const phrases = [{
             labelpos: '',
         },
         {
-            phrase: 'Самое страшное во взрослой жизни - это же придётся платить по счетам, общаться с ЖКХ!',
+            phrase: 'Самое страшное во взрослой жизни — это же придётся платить по счетам, общаться с ЖКХ!',
             place: 'На улице возле школы',
             class: 'yellowbg',
             labelpos: '',
         },
+        // {
+        //     phrase: 'Самые длинные разговоры только о любви',
+        //     place: 'МГУ',
+        //     class: 'pinkbg',
+        //     labelpos: '',
+        // },
         {
-            phrase: 'Самые длинные разговоры только о любви',
-            place: 'МГУ',
-            class: 'pinkbg',
-            labelpos: '',
-        },
-        {
-            phrase: 'Красота не требует жертв',
+            phrase: 'Красота не требует жертв!',
             place: 'Красная площадь',
             class: 'seabg',
             labelpos: '',
         },
         {
-            phrase: 'Счастье-делает нас красивыми',
+            phrase: 'Счастье делает нас красивыми.',
             place: 'Кофейня Starbacks',
             class: 'bluebg',
             labelpos: '',
         },
         {
-            phrase: 'Беги беги, моя уродинка',
+            phrase: 'Беги беги, моя уродинка!',
             place: 'Политехнический',
             class: 'yellowbg',
             labelpos: '',
@@ -144,13 +144,13 @@ const phrases = [{
     class: 'city yellowbg borderRadiusRightDown',
     phrases: [
         {
-            phrase: 'Для тебя - хоть русалку на шпагат',
+            phrase: 'Для тебя — хоть русалку на шпагат!',
             place: 'Кафе на Ломоносовской',
             class: 'pinkbg',
             labelpos: '',
         },
         {
-            phrase: 'Все как хочешь.',
+            phrase: 'Всё, как хочешь.',
             place: 'Востания',
             class: 'seabg',
             labelpos: '',
@@ -166,18 +166,18 @@ const phrases = [{
             phrase: '— Почему горелым пахнет?',
             place: 'Политехнический университет',
             class: 'pinkbg',
-            answer: '— Это я перегорела',
+            answer: '— Это я перегорела.',
             answerclass: 'seabg',
             labelpos: '',
         },
         {
-            phrase: 'Время летит, как чайка за хлебом',
+            phrase: 'Время летит, как чайка за хлебом…',
             place: 'Невский проспект',
             class: 'bluebg',
             labelpos: '',
         },
         {
-            phrase: 'Командовать в доме должен кто-то ОДНА',
+            phrase: 'Командовать в доме должен кто-то ОДНА!',
             place: 'Метро «Новочеркасская»',
             class: 'yellowbg',
             labelpos: '',
@@ -196,7 +196,7 @@ const phrases = [{
     city: 'Белгород',
     class: 'city bluebg borderRadiusLeftUp',
     phrases: [{
-        phrase: 'А я вот вчера видел в озере рыбу-молот',
+        phrase: 'А я вот вчера видел в озере рыбу-молот.',
         place: 'Дом Культуры',
         class: 'pinkbg',
         labelpos: '',
@@ -207,13 +207,13 @@ const phrases = [{
     class: 'city pinkbg borderRadiusRightUp',
     phrases: [
         {
-            phrase: 'Последней пары не будет',
+            phrase: 'Последней пары не будет.',
             place: 'ПТК НовГУ',
             class: 'seabg',
             labelpos: '',
         },
         {
-            phrase: 'Потомок - это тот, кто делает всё потом',
+            phrase: 'Потомок - это тот, кто делает всё потом.',
             place: 'На улице',
             class: 'bluebg',
             labelpos: '',
@@ -224,13 +224,13 @@ const phrases = [{
     class: 'city seabg borderRadiusLeftDown',
     phrases: [
     {
-        phrase: 'Человек лучше, чем сумма его недостатков',
+        phrase: 'Человек лучше, чем сумма его недостатков.',
         place: 'Книжный магазин',
         class: 'bluebg',
         labelpos: '',
     },
     {
-        phrase: 'Кажется книга знает больше чем я',
+        phrase: 'Кажется книга знает больше, чем я.',
         place: 'Отель «Версаль»',
         class: 'yellowbg',
         labelpos: '',
@@ -239,7 +239,7 @@ const phrases = [{
     city: 'Воронеж',
     class: 'city yellowbg borderRadiusRound',
     phrases: [{
-        phrase: 'Я тебя люблю как Крупская Ленина',
+        phrase: 'Я тебя люблю, как Крупская Ленина!',
         place: 'ТЦ «Максимир»',
         class: 'pinkbg',
         labelpos: '',
@@ -249,19 +249,19 @@ const phrases = [{
     class: 'city pinkbg borderRadiusLeftUp',
     phrases: [
     {
-        phrase: 'Мне не хватает какого-нибудь клоуна в жизни',
+        phrase: 'Мне не хватает какого-нибудь клоуна в жизни.',
         place: 'В автобусе',
         class: 'seabg',
         labelpos: '',
     },
     {
-        phrase: 'Я надеюсь, что вся энергия дочери выльется на котов. В конце концов, я их кормлю, я даю им дом, так что это их работа - развлекать ребёнка.',
+        phrase: 'Я надеюсь, что вся энергия дочери выльется на котов. В конце концов, я их кормлю, я даю им дом, так что это их работа — развлекать ребёнка.',
         place: 'На детской площадке',
         class: 'bluebg',
         labelpos: '',
     },
     {
-        phrase: 'Я, как и вы, раб школьных занятий, так что не стоит так удивляться моему опозданию, вызванному слишком медленной скоростью',
+        phrase: 'Я, как и вы, раб школьных занятий, так что не стоит так удивляться моему опозданию, вызванному слишком медленной скоростью.',
         place: 'Школа',
         class: 'yellowbg',
         labelpos: '',
@@ -280,13 +280,13 @@ const phrases = [{
     class: 'city pinkbg borderRadiusRightUp',
     phrases: [
         {
-            phrase: 'Какие вы согласительные',
+            phrase: 'Какие вы согласительные.',
             place: 'АЗС «Газпром»',
             class: 'seabg',
             labelpos: '',
         },
         {
-            phrase: 'Я устоявшаяся личность, пойду возьму конфетку',
+            phrase: 'Я устоявшаяся личность, пойду возьму конфетку.',
             place: 'Здание бывшего кинотеатра Салют»',
             class: 'bluebg',
             labelpos: '',
@@ -296,7 +296,7 @@ const phrases = [{
     city: 'Железногорск',
     class: 'city pinkbg borderRadiusRightDown',
     phrases: [{
-        phrase: 'Если это твои глаза такие голубые, а не линзы, то я готов в них утонуть',
+        phrase: 'Если это твои глаза такие голубые, а не линзы, то я готов в них утонуть.',
         place: 'Площадь перед администрацией города',
         class: 'seabg',
         labelpos: '',
@@ -306,13 +306,13 @@ const phrases = [{
     class: 'city seabg borderRadiusLeftUp',
     phrases: [
     {
-        phrase: 'Плата за индивидуальность — одиночество',
+        phrase: 'Плата за индивидуальность — одиночество.',
         place: 'Метро «Амьево»',
         class: 'bluebg',
         labelpos: '',
     },
     {
-        phrase: 'Не живите ожиданиями',
+        phrase: 'Не живите ожиданиями.',
         place: 'Автобус',
         class: 'yellowbg',
         labelpos: '',
@@ -321,7 +321,7 @@ const phrases = [{
     city: 'Калуга',
     class: 'city yellowbg borderRadiusRightUp',
     phrases: [{
-        phrase: 'Точка кипения настолько горяча сейчас',
+        phrase: 'Точка кипения настолько горяча сейчас…',
         place: 'Антикафе',
         class: 'pinkbg',
         labelpos: '',
@@ -340,13 +340,13 @@ const phrases = [{
     class: 'city bluebg borderRadiusRound',
     phrases: [
     {
-        phrase: 'Гуси крались быстро',
+        phrase: 'Гуси крались быстро.',
         place: 'ТЦ Галереяс',
         class: 'yellowbg',
         labelpos: '',
     },
     {
-        phrase: 'Караван лает , собаки идут',
+        phrase: 'Караван лает, собаки идут.',
         place: 'Улица Горная, дом 13А',
         class: 'pinkbg',
         labelpos: '',
@@ -355,12 +355,12 @@ const phrases = [{
     city: 'Красноярск',
     class: 'city bluebg borderRadiusLeftUp',
     phrases: [{
-        phrase: 'Мы делаем все и со всеми, чего бы ты не хотел',
+        phrase: 'Мы делаем всё и со всеми, чего бы ты не хотел.',
         place: 'В автобусе №14',
         class: 'yellowbg',
         labelpos: '',
     },{
-        phrase: 'Я — человек с сердцем, которое занимает всю площадь моего организма, конечно же',
+        phrase: 'Я — человек с сердцем, которое занимает всю площадь моего организма, конечно же.',
         place: 'У городских часов',
         class: 'pinkbg',
         labelpos: '',
@@ -369,7 +369,7 @@ const phrases = [{
     city: 'Курган',
     class: 'city yellowbg borderRadiusRound',
     phrases: [{
-        phrase: 'Я у нее на стене увидела, прочитала и все.  Я теперь когда такой контент вижу, сразу пролистываю',
+        phrase: 'Я у неё на стене увидела, прочитала и всё.  Я теперь когда такой контент вижу — сразу пролистываю.',
         place: 'Раздевалка на катке',
         class: 'pinkbg',
         labelpos: '',
@@ -383,7 +383,7 @@ const phrases = [{
     city: 'Кюсюр',
     class: 'city bluebg borderRadiusRightDown',
     phrases: [{
-        phrase: 'Плыви по лене своей дальше',
+        phrase: 'Плыви по лени своей дальше.',
         place: 'Клуб «Ровестник»',
         class: 'yellowbg',
         labelpos: '',
@@ -392,7 +392,7 @@ const phrases = [{
     city: 'Липецк',
     class: 'city bluebg borderRadiusRound',
     phrases: [{
-        phrase: 'Пельмени спасут мир',
+        phrase: 'Пельмени спасут мир!',
         place: 'Общежитие ЛГТУ',
         class: 'yellowbg',
         labelpos: '',
@@ -411,23 +411,24 @@ const phrases = [{
     class: 'city',
     phrases: [
     {
-        phrase: 'Опоздал — не спеши',
+        phrase: 'Опоздал — не спеши!',
         place: 'Общежитие на Борисовском тракте',
         class: '',
         labelpos: '',
     },
-    {
-        phrase: 'Самые длинные разговоры только о любви',
-        place: 'ТЦ «Столица»',
-        class: '',
-        labelpos: '',
-    }],
+    // {
+    //     phrase: 'Самые длинные разговоры только о любви',
+    //     place: 'ТЦ «Столица»',
+    //     class: '',
+    //     labelpos: '',
+    // }
+    ],
 },{
     city: 'Кировск',
     class: 'city seabg borderRadiusRound',
     phrases: [
     {
-        phrase: 'Вы не подумайте у меня не сто тысяч рублей подоходного налога в месяц , у меня сто тысяч в год.  Да, мы так и поняли, считать умеем.',
+        phrase: 'Вы не подумайте, у меня не сто тысяч рублей подоходного налога в месяц , у меня сто тысяч в год.  Да, мы так и поняли, считать умеем.',
         place: 'В университете',
         class: 'bluebg',
         labelpos: '',
@@ -436,7 +437,7 @@ const phrases = [{
     city: 'Нижневартовск',
     class: 'city yellowbg borderRadiusRightDown',
     phrases: [{
-        phrase: 'Было так здорово, что чуть сердце из груди не выпрыгнуло',
+        phrase: 'Было так здорово, что чуть сердце из груди не выпрыгнуло!',
         place: 'Площадь Нефтяников',
         class: 'pinkbg',
         labelpos: '',
@@ -445,7 +446,7 @@ const phrases = [{
     city: 'Нижний-Новгород',
     class: 'city seabg borderRadiusLeftDown',
     phrases: [{
-        phrase: 'Если собрались наследить в истории - выбирайте обувь!',
+        phrase: 'Если собрались наследить в истории — выбирайте обувь!',
         place: 'Улица Веденяпина',
         class: 'bluebg',
         labelpos: '',
@@ -455,7 +456,7 @@ const phrases = [{
     class: 'city seabg borderRadiusLeftDown',
     phrases: [
     {
-        phrase: 'Прям бровью режешь мою совесть',
+        phrase: 'Прям бровью режешь мою совесть.',
         place: 'Гимназия №146',
         class: 'bluebg',
         labelpos: '',
@@ -470,7 +471,7 @@ const phrases = [{
     city: 'Пензенская область р.п Земетчино',
     class: 'city seabg borderRadiusRound',
     phrases: [{
-        phrase: 'Весь мир кастрюля, а ты в нем рисинка',
+        phrase: 'Весь мир кастрюля, а ты в нём — рисинка.',
         place: 'Торговый центр «Апельсин»',
         class: 'pinkbg',
         labelpos: '',
@@ -479,7 +480,7 @@ const phrases = [{
     city: 'Переславль-Залесский',
     class: 'city yellowbg borderRadiusLeftDown',
     phrases: [{
-        phrase: 'Всё, что будет происходить с вами- это не простое совпадение.',
+        phrase: 'Всё, что будет происходить с вами — это не простое совпадение.',
         place: 'Народная площадь',
         class: 'pinkbg',
         labelpos: '',
@@ -489,13 +490,13 @@ const phrases = [{
     class: 'city seabg borderRadiusLeftUp',
     phrases: [
     {
-        phrase: 'Ели вы грустите - не грустите!',
+        phrase: 'Ели вы грустите — не грустите!',
         place: 'Офис РРДМОО «Содружество детей и молодежи Дона»',
         class: 'bluebg',
         labelpos: '',
     },
     {
-        phrase: 'Коварная, однако, штука, этот ваш сипипыл-дипипыл',
+        phrase: 'Коварная, однако, штука, этот ваш сипипыл-дипипыл.',
         place: 'Проспект имени М. Нагибина, 32/2',
         class: 'yellowbg',
         labelpos: '',
@@ -504,7 +505,7 @@ const phrases = [{
     city: 'Рубцовск',
     class: 'city pinkbg borderRadiusLeftUp',
     phrases: [{
-        phrase: 'Копай здесь, а я пока узнаю где надо',
+        phrase: 'Копай здесь, а я пока узнаю, где надо.',
         place: 'остановка общественного транспорта «Сквер»',
         class: 'seabg',
         labelpos: '',
@@ -522,7 +523,7 @@ const phrases = [{
     city: 'Сахалин',
     class: 'city bluebg borderRadiusLeftDown',
     phrases: [{
-        phrase: 'Лучше чем надо — лучше не надо',
+        phrase: 'Лучше чем надо — лучше не надо.',
         place: 'Завод РК имени Кирова',
         class: 'yellowbg',
         labelpos: '',
@@ -531,7 +532,7 @@ const phrases = [{
     city: 'Симферополь',
     class: 'city pinkbg borderRadiusRightDown',
     phrases: [{
-        phrase: 'История циклична: матриархат вернётся',
+        phrase: 'История циклична: матриархат вернётся.',
         place: 'Автобусная остановка ТНУ',
         class: 'seabg',
         labelpos: '',
@@ -551,7 +552,7 @@ const phrases = [{
     city: 'Сосновый бор',
     class: 'city seabg borderRadiusRound',
     phrases: [{
-        phrase: 'Да вас милый по пальщам пересчитать',
+        phrase: 'Да вас, милый, по пальщам пересчитать.',
         place: 'На остановке',
         class: 'bluebg',
         labelpos: '',
@@ -560,7 +561,7 @@ const phrases = [{
     city: 'Стерлитамак',
     class: 'city seabg borderRadiusLeftUp',
     phrases: [{
-        phrase: 'Гагарин долетался, а ты договоришься',
+        phrase: 'Гагарин долетался, а ты договоришься.',
         place: 'На автобусной остановке',
         class: 'bluebg',
         labelpos: '',
@@ -569,7 +570,7 @@ const phrases = [{
     city: 'Сызрань',
     class: 'city yellowbg borderRadiusRound',
     phrases: [{
-        phrase: 'Старый организм как машина, лечишь одну болезнь, появляются новые две',
+        phrase: 'Старый организм, как машина, лечишь одну болезнь — появляются новые две.',
         place: 'Электричка',
         class: 'pinkbg',
         labelpos: '',
@@ -578,7 +579,7 @@ const phrases = [{
     city: 'Таганрог',
     class: 'city yellowbg borderRadiusRound',
     phrases: [{
-        phrase: 'На мне мурашки не бегают, а организованными колоннами по двое не спеша покидают тело, согласно плану эвакуации',
+        phrase: 'По мне мурашки не бегают, а организованными колоннами, по двое, не спеша, покидают тело, согласно плану эвакуации.',
         place: 'Таганрогский авиационный колледж им. Петлякова',
         labelpos: '',
         class: 'pinkbg',
@@ -596,7 +597,7 @@ const phrases = [{
     city: 'Туапсе',
     class: 'city yellowbg borderRadiusRightUp',
     phrases: [{
-        phrase: 'Меня безукаризненно поражает ваше безчувственное нахальство молодой вы человек. Мы таких поступков в наше время себе не позволяли милый!',
+        phrase: 'Меня безукоризненно поражает ваше безчувственное нахальство, молодой вы человек. Мы таких поступков в наше время себе не позволяли, милый!',
         place: 'Средняя школа',
         class: 'pinkbg',
         labelpos: '',
@@ -606,13 +607,13 @@ const phrases = [{
     class: 'city bluebg borderRadiusRound',
     phrases: [
     {
-        phrase: 'НикогдА не говори «нЕкогда»',
+        phrase: 'НикогдА не говори «нЕкогда»!',
         place: 'ГАОУ ТО ФМШ',
         class: 'yellowbg',
         labelpos: '',
     },
     {
-        phrase: 'Разочарование со вкусом успехa',
+        phrase: 'Разочарование со вкусом успеха.',
         place: 'Автобус',
         class: 'pinkbg',
         labelpos: '',
@@ -621,7 +622,7 @@ const phrases = [{
     city: 'Урюпинск',
     class: 'city pinkbg borderRadiusRound',
     phrases: [{
-        phrase: 'Ты либо тут, либо там, а не туда сюда',
+        phrase: 'Ты либо тут, либо там, а не туда-сюда.',
         place: 'Улица Доценко, дом 10А',
         class: 'seabg',
         labelpos: '',
@@ -630,7 +631,7 @@ const phrases = [{
     city: 'Хабаровск',
     class: 'city yellowbg borderRadiusRightDown',
     phrases: [{
-        phrase: 'Нетривиальная задач по работе с моим узким профилем',
+        phrase: 'Нетривиальная задача по работе с моим узким профилем.',
         place: 'Школа',
         class: 'pinkbg',
         labelpos: '',
@@ -639,7 +640,7 @@ const phrases = [{
     city: 'Черепаново',
     class: 'city seabg borderRadiusLeftDown',
     phrases: [{
-        phrase: 'У меня сверниголовая идея',
+        phrase: 'У меня сверниголовая идея!',
         place: 'Детский дом творчества',
         class: 'bluebg',
         labelpos: '',
@@ -649,13 +650,13 @@ const phrases = [{
     class: 'city seabg borderRadiusLeftDown',
     phrases: [
     {
-        phrase: 'Айда на каток, катище, каташонок',
+        phrase: 'Айда на каток, катище, каташонок!',
         place: 'Мегаполис-спорт',
         class: 'bluebg',
         labelpos: '',
     },
     {
-        phrase: 'Это полный предел кислородного купола',
+        phrase: 'Это полный предел кислородного купола.',
         place: 'Выстовочная улица',
         class: 'yellowbg',
         labelpos: '',
@@ -664,12 +665,12 @@ const phrases = [{
     city: 'Саратов',
     class: 'city bluebg borderRadiusRound',
     phrases: [{
-        phrase: 'Вот это поворот, давай наоборот',
+        phrase: 'Вот это поворот, давай наоборот.',
         place: 'Площадь у городского цирка',
         class: 'yellowbg',
         labelpos: '',
     },{
-        phrase: 'Весна, жизнь расцветает, радости в жизни становится больше',
+        phrase: 'Весна, жизнь расцветает, радости в жизни становится больше!',
         place: 'Аграрный университет',
         class: 'pinkbg',
         labelpos: '',
@@ -678,7 +679,7 @@ const phrases = [{
     city: 'Эгвекинот',
     class: 'city yellowbg borderRadiusLeftDown',
     phrases: [{
-        phrase: 'Вот так и не поймешь, когда не знаешь как жить на самом вотоке',
+        phrase: 'Вот так и не поймёшь, когда не знаешь, как жить на самом вотоке.',
         place: 'Дом Культуры',
         class: 'pinkbg',
         labelpos: '',
@@ -687,7 +688,7 @@ const phrases = [{
     city: 'Якутск',
     class: 'city yellowbg borderRadiusRightDown',
     phrases: [{
-        phrase: 'Кажется я больше не Саха',
+        phrase: 'Кажется, я больше не Саха.',
         place: 'Аэропорт',
         class: 'pinkbg',
         labelpos: '',
@@ -710,11 +711,11 @@ const phrases = [{
         class: 'pinkbg',
         answer: '—  Что? ',
         answerclass: 'seabg',
-        phrase2: '— Его вижу в каждом облаке.',
+        phrase2: '— Его я вижу в каждом облаке.',
         phrase2class: 'bluebg',
         labelpos: '',
     },{
-        phrase: 'О —  осознанность! Приди ко мнеи дай мне осознание, чтобы сегодня получить пятерку',
+        phrase: 'О, осознанность! Приди ко мне и дай мне осознание, чтобы сегодня получить пятёрку!',
         place: 'Экономический лицей',
         class: 'yellowbg',
         labelpos: '',
@@ -732,7 +733,7 @@ const phrases = [{
     city: 'Архангельск',
     class: 'city bluebg borderRadiusRightDown',
     phrases: [{
-        phrase: 'Плачу, от сильной любви',
+        phrase: 'Плачу от сильной любви.',
         place: 'Морской кадетский корпус',
         class: 'yellowbg',
         labelpos: '',
@@ -741,7 +742,7 @@ const phrases = [{
     city: 'Астрахань',
     class: 'city yellowbg borderRadiusLeftUp',
     phrases: [{
-        phrase: 'Витя, ну какой же это подвиг. Снова тройка. А ты бы хоть раз четверку получил у меня на уроке',
+        phrase: 'Витя, ну какой же это подвиг. Снова тройка. А ты бы хоть раз четверку получил у меня на уроке!',
         place: 'Школа №55',
         class: 'pinkbg',
         labelpos: '',
@@ -750,7 +751,7 @@ const phrases = [{
     city: 'Волгоград',
     class: 'city yellowbg borderRadiusRound',
     phrases: [{
-        phrase: 'Бонджорно, юный деятель! Пора приблизить тебя к прекрасному.',
+        phrase: 'Ну всё, я опаздываю. Мне на вторую пятилетку успеть нужно.',
         place: 'Музей изобразительных искусств',
         class: 'pinkbg',
         labelpos: '',
@@ -764,7 +765,7 @@ const phrases = [{
     city: 'Ленск',
     class: 'city bluebg borderRadiusLeftDown',
     phrases: [{
-        phrase: 'Твой глаз Витенька, не алмаз, твой глаз бриллиант. Нет, изумруд, он же зеленый!',
+        phrase: 'Твой глаз, Витенька, не алмаз, твой глаз — бриллиант. Нет, изумруд, он же зелёный!',
         place: 'Вечерняя школа',
         class: 'yellowbg',
         labelpos: '',
@@ -773,7 +774,7 @@ const phrases = [{
     city: 'Уфа',
     class: 'city yellowbg borderRadiusRound',
     phrases: [{
-        phrase: 'Возле меня махнула хвостом хоть какая-то живность, мало-мальски напоминающая рыбу',
+        phrase: 'Возле меня махнула хвостом хоть какая-то живность, мало-мальски напоминающая рыбу.',
         place: 'Национальный музей',
         class: 'pinkbg',
         labelpos: '',
@@ -787,12 +788,12 @@ const phrases = [{
         class: 'pinkbg',
         answer: '— Там же два',
         answerclass: 'seabg',
-        phrase2: '— Два — это товя оценка по математике!',
+        phrase2: '— Два — это твоя оценка по математике!',
         phrase2class: 'bluebg',
         labelpos: '',
     },
     {
-        phrase: 'А ну-ка спрятался, и дал шанс подумать каждому',
+        phrase: 'А ну-ка спрятался, и дал шанс подумать каждому!',
         place: 'Школа №26',
         class: 'yellowbg',
         labelpos: '',
@@ -801,7 +802,7 @@ const phrases = [{
     city: 'Оренбург',
     class: 'city yelllowbg borderRadiusLeftUp',
     phrases: [{
-        phrase: 'И мы были настолько уничтожены и переиграны, что переиграли сами себя',
+        phrase: 'И мы были настолько уничтожены и переиграны, что переиграли сами себя.',
         place: 'Школа №41',
         class: 'pinkbg',
         labelpos: '',
@@ -810,7 +811,7 @@ const phrases = [{
     city: 'Норильск',
     class: 'city pinkbg borderRadiusLeftDown',
     phrases: [{
-        phrase: 'Да если бы я знакла, что мне уроков столько делать. Да это как на санях до Самары. Я же каждые выходные в 6 утра, туда и обратно!',
+        phrase: 'Да если бы я знала, что мне уроков столько делать. Да это как на санях до Самары. Я же каждые выходные в 6 утра, туда и обратно!',
         place: 'Гимназия №4',
         class: 'seabg',
         labelpos: '',
@@ -819,7 +820,7 @@ const phrases = [{
     city: 'Воркута',
     class: 'city seabg borderRadiusLeftUp',
     phrases: [{
-        phrase: 'Так всегда веселее. Так всегда проще — человек это существо социальное',
+        phrase: 'Так всегда веселее. Так всегда проще — человек это существо социальное!',
         place: 'Политехнически техникум',
         class: 'bluebg',
         labelpos: '',
@@ -828,7 +829,7 @@ const phrases = [{
     city: 'Вилюйск',
     class: 'city seabg borderRadiusRightDown',
     phrases: [{
-        phrase: 'Развиваться надо уметь, как Толстой, как Лермонтов, вон, как я например! ',
+        phrase: 'Развиваться надо уметь, как Толстой, как Лермонтов, вон, как я, например!',
         place: 'Педагогический колледж имени Н.Г.Чернышевского',
         class: 'bluebg',
         labelpos: '',
