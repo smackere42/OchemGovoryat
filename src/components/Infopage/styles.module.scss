@@ -104,10 +104,11 @@
 }
 
 .standrtText{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: 'Circe Regular';
+    line-height: normal;
 
-    a {
+    /* a {
         color: #5267ff;
         border-style: none;
         border: 0px;
@@ -121,15 +122,17 @@
         color: #00E4BE;
         border-style: none;
         border: 0px;
-    }
+    } */
 }
 
 .standrtTextBreaker{
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+    line-height: normal;
 }
 
 .bold{
     font-weight: bold;
+    line-height: normal;
 }
 
 .gitMoadl{

@@ -869,7 +869,7 @@ const Map = () => {
           style={{
             width: '100%',
             height: '100%',
-            background: 'white',
+            background: '#EBEBF3',
             margin: '0',
             minHeight: '100vh',
           }}

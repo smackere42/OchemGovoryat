@@ -4,6 +4,8 @@ import PopUp from '../src/components/PopUp/PopUp';
 import Preloader from '../src/components/Preloader/Preloader';
 import { useRouter } from 'next/router';
 import RightBottom from '../src/components/RightBottom/RightBottom';
+import AboutMap from '../src/components/AboutMap/AboutMap';
+import InfoModal from '../src/components/Infopage/InfoModal';
 
 const Map = () => {
   const [loading, setLoading] = useState(true);
@@ -78,11 +80,24 @@ const Map = () => {
     const map = L.map('map', { zoomControl: false });
     const popupt = document.getElementById('pop-container');
     const closeBut = document.getElementById('pop-toggle');
+    const about = document.getElementById('aboutToggle');
+    const modal = document.getElementById('modal');
+    const modalToggle = document.getElementById('modalToggle');
 
-    closeBut.addEventListener('click', function () { 
-      popupt.classList.remove('popShow');
-      popupt.classList.add('popHide');
+    modalToggle.addEventListener('click', function () {
+      modal.classList.remove('modalShow');
+      modal.classList.add('modalHide');
     });
+
+    about.addEventListener('click', function () {
+      modal.classList.remove('modalHide');
+      modal.classList.add('modalShow');
+    });
+
+    // closeBut.addEventListener('click', function () { 
+    //   popupt.classList.remove('popShow');
+    //   popupt.classList.add('popHide');
+    // });
 
     //Popup functions and events
     const popShow = (i) => {
@@ -837,11 +852,14 @@ const Map = () => {
 
   return (
     <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+      
       {loading && <Preloader />}
 
       <PopUp index={index} />
       <LeftTop />
       <RightBottom/>
+      <AboutMap/>
+      <InfoModal/>
         <p tabIndex={0} title='для корректной работы экранного диктора перезагрузите страницу или нажмите f5' role="alert"></p>
         <p tabIndex={0} title='для переключения между эллеиентами исспользуйте стрелки вниз и вверх, для выхода из страницы с фразами нажмите кнопку выхода или эскейп' role="alert"></p>
         <div
@@ -849,7 +867,7 @@ const Map = () => {
           style={{
             width: '100%',
             height: '100%',
-            background: 'white',
+            background: '#EBEBF3',
             margin: '0',
             minHeight: '100vh',
           }}

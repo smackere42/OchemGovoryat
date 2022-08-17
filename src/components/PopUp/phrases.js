@@ -506,7 +506,7 @@ const phrases = [{
     class: 'city pinkbg borderRadiusLeftUp',
     phrases: [{
         phrase: 'Копай здесь, а я пока узнаю, где надо.',
-        place: 'остановка общественного транспорта «Сквер»',
+        place: 'Остановка общественного транспорта «Сквер»',
         class: 'seabg',
         labelpos: '',
     }],
