@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import ym from 'react-yandex-metrika';
 import LeftTop from '../src/components/LeftTop/LeftTopContent';
 import PopUp from '../src/components/PopUp/PopUp';
 import Preloader from '../src/components/Preloader/Preloader';
@@ -104,6 +105,7 @@ const Map = () => {
       popupt.classList.remove('popHide');
       popupt.classList.add('popShow');
       setIndex(i);
+      ym('reachGoal','city_click');
     };
 
     const preloaderTimeout = () =>{
