@@ -7,10 +7,12 @@ import '../styles/mainStyles.scss'
 function MyApp({ Component, pageProps }) {
   return (
     <YMInitializer
-      accounts={[90074848]}
+      accounts={[76933960]}
       options={{
         webvisor: true,
         clickmap: true,
+        accurateTrackBounce:true,
+        webvisor:true,
       }}
       version="2"
     >
