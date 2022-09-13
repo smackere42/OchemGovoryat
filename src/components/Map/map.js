@@ -871,7 +871,7 @@ const Map = () => {
           style={{
             width: '100%',
             height: '100%',
-            background: '#EBEBF3',
+            background: '#0074E4',
             margin: '0',
             minHeight: '100vh',
           }}
